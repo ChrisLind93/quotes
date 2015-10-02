@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <context-param>
+        <description>Should the application run stacktrace aswell</description>
+        <param-name>debug</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <security-constraint>
+        <display-name>Constraint1</display-name>
+        <web-resource-collection>
+            <web-resource-name>Quotes</web-resource-name>
+            <description>Admins can after login</description>
+            <url-pattern>/api/quotes/*</url-pattern>
+            <http-method>PUT</http-method>
+            <http-method>POST</http-method>
+            <http-method>DELETE</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>quote</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>UserDatabase</realm-name>
+    </login-config>
+    <security-role>
+        <description>Quote </description>
+        <role-name>quote</role-name>
+    </security-role>
+</web-app>

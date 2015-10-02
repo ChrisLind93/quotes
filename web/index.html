@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Quotes</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <br>
+                <div id="msg"></div>
+            </div>
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>Quotes API</h1>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <blockquote>
+                            <p id="quoteOfTheDay">Behind every great man, is a woman rolling her eyes</p>
+                        </blockquote>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-primary pull-right" id="getRandomQuote">Get new quote</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-xs-12">
+                <input type="text" class="form-control" id="textfield">
+                <input type="hidden" id="quoteId" value="">
+                <hr>
+                <p><a href="#" class="btn btn-primary" id="getQuote">Get Quote</a> <a href="#" class="btn btn-primary" id="saveQuote">Save Quote</a> <a href="#" class="btn btn-danger pull-right" id="deleteQuote">Delete Quote</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
